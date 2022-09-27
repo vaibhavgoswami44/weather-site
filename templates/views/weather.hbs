@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    {{>links}}
+</head>
+
+<body>
+    {{>Nav}}
+
+    <div class="weather_homediv">
+        <div class="container weather-div">
+
+
+            <div class="weather_form-div">
+                <form>
+                    <input type="text" name="" id="cityName" placeholder="Search Any City">
+                    <button id="submit">Search</button>
+
+                </form>
+            </div>
+
+            <div class="weather_info_div">
+                <div class="weather_second-div">
+                    <p id="day"></p>
+                    <p id="date"></p>
+                </div>
+
+                <div class="weather_data_div">
+
+                    <p id="errorShow"> </p>
+
+                    <span id="hideData">
+                        <h5 id="city_con"></h5>
+                        <h1> <span id="temp"></span> <span id="temp_status"></span></h1>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>
